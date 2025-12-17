@@ -1,0 +1,9 @@
+<resources>
+    <color name="linear_bg">#F9F5FF</color> <!-- soft purple background -->
+    <color name="frame_bg">#4CAF50</color> <!-- green -->
+    <color name="relative_bg">#F9F5FF</color>
+    <color name="constraint_bg">#F3E5F5</color> <!-- light lavender -->
+    <color name="btn_color">#5E35B1</color> <!-- purple -->
+    <color name="text_dark">#212121</color>
+    <color name="white">#FFFFFF</color>
+</resources>

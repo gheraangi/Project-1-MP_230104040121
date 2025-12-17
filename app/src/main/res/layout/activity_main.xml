@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btnLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/btn_color"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frame Layout"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/btn_color"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/btn_color"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnConstraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Constraint Layout"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/btn_color"
+        android:textColor="@color/white" />
+
+</LinearLayout>

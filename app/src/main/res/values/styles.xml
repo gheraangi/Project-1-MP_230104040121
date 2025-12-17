@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.Project1MP" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/btn_color</item>
+        <item name="colorPrimaryVariant">@color/btn_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+</resources>

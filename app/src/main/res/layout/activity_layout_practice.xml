@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"    android:layout_height="match_parent"
+    android:background="#F3E5F5"  tools:context=".LayoutPracticeActivity">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hallo_mobile_programming"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#4A148C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp" />
+
+    <!-- Tombol Kreasi dengan Sudut Sangat Bulat -->
+    <Button
+        android:id="@+id/btnCreativeClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik Saya"
+        android:backgroundTint="#673AB7"
+        android:textColor="@android:color/white"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:cornerRadius="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreeting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Gambar Ikon Android dalam CardView untuk efek bayangan dan sudut -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAndroidIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreativeClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:id="@+id/ivAndroidIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_android_green"
+            android:scaleType="centerInside"
+            android:background="#4CAF50"
+            android:padding="16dp"
+            tools:ignore="ContentDescription,HardcodedText" />
+        <!-- Anda perlu menambahkan drawable ic_android_green -->
+        <!-- atau ganti dengan @android:drawable/sym_def_app_icon untuk ikon default -->
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Input Nama dengan Material Design -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama Anda"
+        app:layout_constraintTop_toBottomOf="@+id/cardAndroidIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="40dp"
+        app:boxStrokeColor="#673AB7"
+        app:hintTextColor="#673AB7"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords"
+            android:imeOptions="actionDone"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tombol Submit (Opsional, jika ingin ada aksi setelah input nama) -->
+    <Button
+        android:id="@+id/btnSubmitName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sapa Saya!"
+        android:backgroundTint="#FF6F00"
+        android:textColor="@android:color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tilName"
+        app:layout_constraintStart_toStartOf="@+id/tilName"
+        app:layout_constraintEnd_toEndOf="@+id/tilName"
+        android:layout_marginTop="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" /> <!-- Awalnya disembunyikan -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
